@@ -73,10 +73,6 @@ tf_module {
     argspec: "args=[\'tensor\', \'layer\', \'node_index\'], varargs=None, keywords=None, defaults=[\'None\', \'None\'], "
   }
   member_method {
-    name: "image_dataset_from_directory"
-    argspec: "args=[\'directory\', \'labels\', \'label_mode\', \'class_names\', \'color_mode\', \'batch_size\', \'image_size\', \'shuffle\', \'seed\', \'validation_split\', \'subset\', \'interpolation\', \'follow_links\', \'crop_to_aspect_ratio\'], varargs=None, keywords=kwargs, defaults=[\'inferred\', \'int\', \'None\', \'rgb\', \'32\', \'(256, 256)\', \'True\', \'None\', \'None\', \'None\', \'bilinear\', \'False\', \'False\'], "
-  }
-  member_method {
     name: "img_to_array"
     argspec: "args=[\'img\', \'data_format\', \'dtype\'], varargs=None, keywords=None, defaults=[\'None\', \'None\'], "
   }
@@ -86,7 +82,7 @@ tf_module {
   }
   member_method {
     name: "load_img"
-    argspec: "args=[\'path\', \'grayscale\', \'color_mode\', \'target_size\', \'interpolation\'], varargs=None, keywords=None, defaults=[\'False\', \'rgb\', \'None\', \'nearest\'], "
+    argspec: "args=[\'path\', \'grayscale\', \'color_mode\', \'target_size\', \'interpolation\', \'keep_aspect_ratio\'], varargs=None, keywords=None, defaults=[\'False\', \'rgb\', \'None\', \'nearest\', \'False\'], "
   }
   member_method {
     name: "model_to_dot"

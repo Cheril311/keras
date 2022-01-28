@@ -34,12 +34,14 @@ py_library(
     ],
     srcs_version = "PY3",
     deps = [
-        "//:expect_keras_preprocessing_installed",
+        "//:expect_numpy_installed",
+        "//:expect_pandas_installed",
         "//:expect_pillow_installed",
         "//:expect_scipy_installed",
         "//:expect_tensorflow_installed",
         "//keras:backend",
         "//keras/utils:data_utils",
+        "//third_party/py/PIL:pil",
     ],
 )
 
